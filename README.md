@@ -15,15 +15,15 @@ RoboFile Fusion solves this by scanning your backup folder and merging your sele
 ### 1. Merge Programs Screen
 The primary workstation for selecting backups, choosing controller specifications, and running the merge engine.
 
+&nbsp;
 <p align="center">
-  <img width="960" alt="RoboFile Fusion - Merge Screen" src="https://github.com/user-attachments/assets/b38a420c-d7c4-4593-b62d-30dba4d0db07" />
+  <img width="700" alt="RoboFile Fusion - Merge Screen" src="https://github.com/user-attachments/assets/b38a420c-d7c4-4593-b62d-30dba4d0db07" />
 </p>
+&nbsp;
 
 * **Drag-and-Drop Drop Zone**: Drop any robot backup folder directly into the application, or use the standard folder browser.
 * **Controller Brand Selector**: Choose your robot manufacturer (FANUC, Motoman, KUKA, ABB, Universal Robots, Kawasaki, Panasonic, Epson, or Generic) to automatically apply optimized file extension filters.
-* **Recursive Folder Scanning**: Toggle subdirectory recursion to scan nested directories or flatten multi-folder backup structures.
-* **Non-Blocking Asynchronous Engine**: Merges hundreds of program files in seconds with a live progress bar, cancellation support, and non-freezing UI.
-* **Automatic Output Management**: Option to automatically open and reveal the merged output file in Windows File Explorer upon completion.
+* **Automatic Output Management**: Automatically open and reveal the merged output file in Windows File Explorer upon completion.
 
 &nbsp;
 <p align="center">◈ ◈ ◈</p>
@@ -32,17 +32,21 @@ The primary workstation for selecting backups, choosing controller specification
 ### 2. Program Preview Screen
 An interactive code inspection viewer for examining individual robot routines and full merged document previews before merging.
 
+&nbsp;
+<p align="center">
+  <img width="700" alt="RoboFile Fusion - View Programs Screen" src="https://github.com/user-attachments/assets/e0d85827-d4b1-4796-a823-46816b3f0631" />
+</p>
+&nbsp;
+
 * **Routine Dropdown & Step Navigation**: Switch seamlessly between individual routines or inspect the full merged output with Prev / Next step navigation buttons.
-* **Live In-Code Search**: Filter program instructions in real-time matching your search query, while preserving original robot file line numbers in the gutter.
+* **Live In-Code Search**: Filter program instructions in real-time matching your search query.
 * **IDE & CLI Color Themes**: Switch between 5 selectable color schemes tailored for controls and robotics engineers:
-  * **Light**: Crisp daylight theme with high-contrast slate text.
-  * **Dark (IDE)**: Dark code theme inspired by Visual Studio and VS Code.
-  * **CLI Green**: Classic terminal / Matrix phosphor green aesthetic.
-  * **CLI Cyan**: Deep navy and bright cyber cyan terminal styling.
-  * **CLI Amber**: Retro monochrome CRT amber phosphor glow.
-* **Synchronized Line Numbers Gutter**: Monospace line numbering synchronized across horizontal and vertical scrolling.
+  * **Light**
+  * **Dark (IDE)**
+  * **CLI Green**
+  * **CLI Cyan**
+  * **CLI Amber**
 * **One-Click Clipboard Copying**: Instantly copy the routine or merged text directly to your clipboard.
-* **File Metrics Badges**: Displays live line count and file size indicators for the inspected routine.
 
 &nbsp;
 <p align="center">◈ ◈ ◈</p>
@@ -51,11 +55,12 @@ An interactive code inspection viewer for examining individual robot routines an
 ### 3. Programs Library Screen
 A comprehensive catalog view of all discovered robot routines before merging.
 
+&nbsp;
 <p align="center">
-  <img width="960" alt="RoboFile Fusion - Programs Library Screen" src="https://github.com/user-attachments/assets/f5940f42-5c63-4f5f-93bf-a67e694f560a" />
+  <img width="700" alt="RoboFile Fusion - Programs Library Screen" src="https://github.com/user-attachments/assets/f5940f42-5c63-4f5f-93bf-a67e694f560a" />
 </p>
+&nbsp;
 
-* **Discovered Routine Catalog**: Inspect every detected routine with exact line counts, file size (in KB/MB), and last modified timestamp.
 * **Selective Routine Inclusion**: Check or uncheck individual files to merge only the routines needed for your current audit.
 * **Master Selection Toggle**: Quickly select or deselect all files with a single click.
 
@@ -64,18 +69,18 @@ A comprehensive catalog view of all discovered robot routines before merging.
 &nbsp;
 
 ### 4. Inputs & Outputs (I/O) Intelligence Table
-An automated signal extraction engine that surfaces physical and internal robot I/O signals and their associated teach-pendant comments.
+An automated IO extraction engine that scans robot I/O signals and their associated comments.
 
+&nbsp;
 <p align="center">
-  <img width="960" alt="RoboFile Fusion - Inputs &amp; Outputs Table" src="https://github.com/user-attachments/assets/c439c889-53ad-43a3-b68e-997e51b79842" />
+  <img width="700" alt="RoboFile Fusion - Inputs &amp; Outputs Table" src="https://github.com/user-attachments/assets/c439c889-53ad-43a3-b68e-997e51b79842" />
 </p>
+&nbsp;
 
-* **Automatic Signal Extraction**: Automatically inspects checked routines to extract signal addresses, types, and logic occurrences.
+* **Automatic IO Extraction**: Automatically inspects checked routines to extract IO addresses, types, and logic occurrences.
 * **Comment & Symbol Resolution**: Captures teach-pendant comments, descriptions, and user labels alongside signal addresses for fast verification.
 * **Signal Type Filtering**: Filter instantly by Digital Inputs (`DI`), Digital Outputs (`DO`), Group I/O (`GI`/`GO`), Robot I/O (`RI`/`RO`), and Flags (`F`).
-* **Live Search Query**: Filter signals in real-time by name, comment, address, or type.
-* **"With Comments Only" Filter**: Instantly isolate documented signals from unused or empty addresses.
-* **Summary Metric Cards**: Live counters displaying total signals, digital inputs, digital outputs, group signals, robot I/O, and flags.
+* **"With Comments Only" Filter**: Instantly isolate unused or empty addresses.
 * **Export to CSV**: Export the resolved I/O table directly into `.csv` format for Microsoft Excel, PLC tag database mapping, or electrical commissioning binders.
 * **Verification Status**: Tested and verified for the current build version of the application on **FANUC** (`.ls`, `.va`) and **Yaskawa Motoman** (`.jbi`) controllers.
 
@@ -86,14 +91,15 @@ An automated signal extraction engine that surfaces physical and internal robot 
 ### 5. Settings & Controller Presets Screen
 Full control over target file extensions and ignored file patterns.
 
+&nbsp;
 <p align="center">
-  <img width="960" alt="RoboFile Fusion - Settings Screen" src="https://github.com/user-attachments/assets/7844ca47-5952-484a-8c71-a560bdaea397" />
+  <img width="700" alt="RoboFile Fusion - Settings Screen" src="https://github.com/user-attachments/assets/7844ca47-5952-484a-8c71-a560bdaea397" />
 </p>
+&nbsp;
 
 * **Pre-Configured Controller Presets**: Ships with pre-configured settings for FANUC, KUKA, ABB, Yaskawa Motoman, Universal Robots, Kawasaki, Panasonic, and Epson.
 * **Custom Target Extensions**: Define custom comma-separated file extensions to tailor scanning for proprietary or legacy robot formats.
 * **Files to Ignore Filters**: Specify comma-separated wildcard patterns (e.g., `*.tp, *.log, *.bak`) to automatically exclude binary routines or temporary system logs.
-* **Persistent Settings**: User configurations automatically persist across application restarts in local storage.
 
 &nbsp;
 <p align="center">◈ ◈ ◈</p>
@@ -102,14 +108,14 @@ Full control over target file extensions and ignored file patterns.
 ### 6. About Screen
 Application details, controller testing notices, and feedback channels.
 
+&nbsp;
 <p align="center">
-  <img width="960" alt="RoboFile Fusion - About Screen" src="https://github.com/user-attachments/assets/a5accea3-ece9-4d25-859f-484f270ea5be" />
+  <img width="700" alt="RoboFile Fusion - About Screen" src="https://github.com/user-attachments/assets/a5accea3-ece9-4d25-859f-484f270ea5be" />
 </p>
+&nbsp;
 
 * **App Details**: Version, build number, and application overview.
 * **Verification & Testing Status**: Clarification of tested controllers (FANUC and Motoman for the current build) and implementation specifications.
-* **Bug Reporting & Support**: Guidance on reporting routine syntax discrepancies and submitting sample files.
-* **Repository Reference**: Reference link to the official project repository.
 
 &nbsp;
 <p align="center">◈ ◈ ◈</p>
@@ -117,17 +123,22 @@ Application details, controller testing notices, and feedback channels.
 
 ## Supported Robot Formats
 
-| Manufacturer | Extensions | Language / Routine Types | I/O Extraction Status |
-| :--- | :--- | :--- | :--- |
-| **FANUC** | `.ls`, `.va` | ASCII Program Files & Variable Files | Verified (Current Build) |
-| **Yaskawa Motoman** | `.jbi`, `.dat`, `.cnd` | INFORM Job Files, Data & Condition Files | Verified (Current Build) |
-| **KUKA** | `.src`, `.dat`, `.sub` | KRL Source Routines, Data, Submit Interpreter | Specification Implemented |
-| **ABB** | `.mod`, `.prg`, `.sys` | RAPID Modules & System Files | Specification Implemented |
-| **Universal Robots** | `.script`, `.txt` | URScript Routines & Scripts | Specification Implemented |
-| **Kawasaki** | `.as`, `.pg` | AS Language & Program Files | Specification Implemented |
-| **Panasonic** | `.prg`, `.dat` | TAWERS Program & Data Files | Specification Implemented |
-| **Epson** | `.prg`, `.pts` | SPEL+ Programs & Point Coordinate Files | Specification Implemented |
-| **Generic** | `.txt` | Plain-text automation routines / custom code | Universal Text Merge |
+<div align="center">
+
+| Manufacturer | Extensions | I/O Extraction Status |
+| :--- | :--- | :--- |
+| **FANUC** | `.ls`, `.va` | Verified (Current Build) |
+| **Yaskawa Motoman** | `.jbi`, `.dat`, `.cnd` | Verified (Current Build) |
+| **KUKA** | `.src`, `.dat`, `.sub` | Specification Implemented |
+| **ABB** | `.mod`, `.prg`, `.sys` | Specification Implemented |
+| **Universal Robots** | `.script`, `.txt` | Specification Implemented |
+| **Kawasaki** | `.as`, `.pg` | Specification Implemented |
+| **Panasonic** | `.prg`, `.dat` | Specification Implemented |
+| **Epson** | `.prg`, `.pts` | Specification Implemented |
+| **Generic** | `.txt` | Universal Text Merge |
+
+</div>
+
 
 &nbsp;
 <p align="center">◈ ◈ ◈</p>
@@ -149,9 +160,10 @@ RoboFile Fusion is built with strict safety guarantees to safeguard critical ind
 
 RoboFile Fusion is distributed as a **portable single-file executable (`.exe`)**:
 
-1. Download **`RoboFile Fusion.exe`** from the [GitHub Releases](https://github.com/arshdeepsingh404/RoboFile-Fusion/releases) page.
-2. Double-click **`RoboFile Fusion.exe`** to launch immediately.
-3. **No installation required**: Runs standalone on Windows 10/11 (x64) without administrative privileges or separate runtime installers.
+1. Navigate to the Releases tab on the right side of this GitHub repository.
+2. Download the latest **`RoboFile Fusion.exe`**.
+3. Double-click **`RoboFile Fusion.exe`** to launch immediately.
+4. **No installation required**: Runs standalone on Windows 10/11 (x64) without administrative privileges or separate runtime installers.
 
 &nbsp;
 <p align="center">◈ ◈ ◈</p>
@@ -159,10 +171,5 @@ RoboFile Fusion is distributed as a **portable single-file executable (`.exe`)**
 
 ## Reporting Bugs & Routine Variations
 
-Due to syntax differences across robot software revisions, controller generations, and installed software options:
 * If you encounter routine parsing issues or syntax variations, please report them on the [GitHub Issues](https://github.com/arshdeepsingh404/RoboFile-Fusion/issues) page.
 * Attaching sample backup directories or routine files helps diagnose controller syntax variations and expedite fixes.
-
-&nbsp;
-<p align="center">◈ ◈ ◈</p>
-&nbsp;
